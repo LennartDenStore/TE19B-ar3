@@ -1,0 +1,27 @@
+﻿<Window x:Class="Wpfintro.MainWindow" 
+xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+xmlns:local="clr-namespace:Wpfintro" 
+mc:Ignorable="d" 
+Title="Min första app" 
+Height="500" Width="500" Background="#EEE">
+    <StackPanel Margin="10">
+        <Label Margin="5" FontSize="25">Ange text</Label>
+        <StackPanel Orientation="Horizontal">
+        <Label>Namn</Label>
+        <TextBox Name="inputName" Width="100" Margin="5"></TextBox>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+    <Label Margin="5">Ange epostadress</Label>
+    <TextBox Margin="5" Width="300" />
+</StackPanel>
+<StackPanel Orientation="Horizontal">
+    <Label Margin="5" Height="50">Ange texten</Label>
+    <TextBox Margin="5" Width="300" />
+</StackPanel>
+        <Button Margin="5">OK</Button>
+        <Button Margin="5" Height="30">Avbryt</Button>
+    </StackPanel>
+</Window>
