@@ -1,0 +1,29 @@
+﻿<Window x:Class="Uppgift2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Uppgift2"
+        mc:Ignorable="d"
+        Title="Enkel miniräknare" Height="380" Width="300" Background="#EEE">
+
+    <StackPanel Margin="10">
+        <Label Margin="5" FontSize="25">Enkel miniräknare</Label>
+    
+            <Label>Tal1</Label>
+            <TextBox Name="rutaText" Height="50" ></TextBox>
+             <Label>Tal2</Label>
+            <TextBox Name="rutaNyckel" Margin="5" Height="20"></TextBox>
+       
+       <DockPanel HorizontalAlignment="Stretch">
+        <Button Click="ClicPlus" Margin="5" Width="50" Height="50" Background="#FFF">+</Button>
+        <Button Click="ClicMinus" Margin="5" Width="50" Height="50" Background="#FFF">-</Button>
+        <Button Click="ClicGånger" Margin="5" Width="50" Height="50" Background="#FFF">*</Button>
+        <Button Click="ClicDividera" Margin="5" Width="50" Height="50" Background="#FFF">/</Button>
+       </DockPanel>
+
+        <TextBox Name="rutaResultat" Height="20" AcceptsReturn="true" IsReadOnly="True" Margin="5" FontSize="italic" ></TextBox>
+    </StackPanel>
+</Window>
+   
+
