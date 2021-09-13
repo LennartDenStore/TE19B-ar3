@@ -23,17 +23,23 @@ namespace Uppgift2
         public MainWindow()
         {
             InitializeComponent();
+            int Tal1 = 0;
+            int Tal2 = 0;
         }
         private void ClickPlus(object sender, RoutedEventArgs e)
         {
+            int rutaResultat = Tal1 ++ Tal2; 
     }
         private void ClickMinus(object sender, RoutedEventArgs e)
         {
+       int rutaResultat = Tal1 -- Tal2;
     }
         private void ClickGånger(object sender, RoutedEventArgs e)
         {
+       int rutaResultat = Tal1 * Tal2;
     }
         private void ClickDividera(object sender, RoutedEventArgs e)
         {
+        int rutaResultat = Tal1 / Tal2;
     }
 }

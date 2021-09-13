@@ -11,9 +11,9 @@
         <Label Margin="5" FontSize="25">Enkel miniräknare</Label>
     
             <Label>Tal1</Label>
-            <TextBox Name="rutaText" Height="50" ></TextBox>
+            <TextBox Name="Tal1" Height="20" ></TextBox>
              <Label>Tal2</Label>
-            <TextBox Name="rutaNyckel" Margin="5" Height="20"></TextBox>
+            <TextBox Name="Tal2" Height="20"></TextBox>
        
        <DockPanel HorizontalAlignment="Stretch">
         <Button Click="ClicPlus" Margin="5" Width="50" Height="50" Background="#FFF">+</Button>
