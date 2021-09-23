@@ -6,7 +6,7 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
-<itemGroup>
-<Resource include="Resurser/blender-phone-solid.png" />
-</itemGroup>
+<ItemGroup>
+<Resource Include="Resurser/blender-phone-solid.png" />
+</ItemGroup>
 </Project>

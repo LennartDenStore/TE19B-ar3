@@ -20,9 +20,29 @@ namespace Labb3
     /// </summary>
     public partial class MainWindow : Window
     {
+        static string[] rader = new string[194];
+
         public MainWindow()
         {
             InitializeComponent();
+
+            // Läs in alla rader från textfilen countries.csv
+        rader = File.ReadAllLines("Resurser/countries.csv");
+        }
+        
+        private void ClickSök(object sender, RoutedEventArgs e)
+        {
+            int antal = 1;
+        string sökterm = "";
+
+            // Läs in sökterm
+        sökterm = rutaSökterm.Text;
+   
+            // Skriv ut matchande land och dess landskod
+        rutaResultat.Text += $"{antal} {land}: {landskod}";
+ 
+            // Summering
+        rutaStatus.Text = $"Hittade {antal} länder.";
         }
     }
 }
