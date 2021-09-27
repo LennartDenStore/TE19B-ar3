@@ -22,10 +22,10 @@
         <Image Grid.Row="0" Grid.Column="0" Source="Resurser/blender-phone-solid.png" />
         <Label Grid.Row="0" Grid.Column="1" Margin="5" FontSize="24">Söka land</Label>
         <Label Grid.Row="1" Grid.Column="0" Margin="5">Ange sökterm</Label>
-        <TextBox Grid.Row="1" Grid.Column="1" Margin="5"/>
+        <TextBox Name = "rutaSökterm" Grid.Row="1" Grid.Column="1" Margin="5"/>
         <Button Grid.Row="2" Grid.ColumnSpan="2" Margin="5" FontSize="24" Height="30" Click="ClickSök">Sök!</Button>
         <Label Grid.Row="3" Grid.Column="0" Margin="5">Matchande länder</Label>
-        <TextBox Grid.Row="3" Grid.Column="1" Margin="5" MinHeight="150" TextWrapping="Wrap" IsReadOnly="True"/>
-        <TextBox Grid.Row="4" Grid.ColumnSpan="2" Margin="5" Foreground="#999" IsReadOnly="true" Background="#EEE">Inga matchande länder...</TextBox>
+        <TextBox Name = "rutaResultat" Grid.Row="3" Grid.Column="1" Margin="5" MinHeight="150" TextWrapping="Wrap" IsReadOnly="True"/>
+        <TextBlock Name = "rutaStatus" Grid.Row="4" Grid.ColumnSpan="2" Margin="5" Foreground="#999"  Background="#EEE">Inga matchande länder...</TextBlock>
     </Grid>
 </Window>
