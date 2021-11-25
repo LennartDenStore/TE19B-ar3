@@ -12,7 +12,7 @@ namespace KlassDiagram
             Console.WriteLine("Räkna ut lönekostnad");
 
             // Loopa ett antal gånger 
-            IList<personinkomst> listaPerson = new List<personinkomst>();
+            List<personinkomst> listaPerson = new List<personinkomst>();
 
 
             while (true)
