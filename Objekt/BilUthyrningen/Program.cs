@@ -99,8 +99,8 @@ namespace BilUthyrningen
     }
     class kund
     {
-        public string Personnr {get; set;}
-        public string Fnamn {get; set;}
+        public string Personnr { get; set; }
+        public string Fnamn { get; set; }
         public string Enamn { get; set; }
         public string Mobil { get; set; }
     }
