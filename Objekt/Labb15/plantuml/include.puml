@@ -1,0 +1,10 @@
+@startuml
+class Program {
+    {static} Main(args:string[]) : void
+}
+class Tärning {
+    - Sidor : int <<get>> <<set>>
+    + Tärning(_sidor:int)
+    + SkrivUt() : void
+}
+@enduml

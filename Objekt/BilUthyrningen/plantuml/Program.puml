@@ -1,0 +1,27 @@
+@startuml
+skinparam ClassAttributeIconSize 0
+skinparam Monochrome true
+hide circle
+/' class Program {
+    {static} ListaAvtal : List<Avtal>
+    {static} Main(args:string[]) : void
+} '/
+class Avtal {
+    + Datum : DateTime <<get>> <<set>>
+    + RegNr : string <<get>> <<set>>
+    + Km : int <<get>> <<set>>
+    + Kostnad : int <<get>> <<set>>
+    + Tidsram : int <<get>> <<set>>
+    + Personnr : string <<get>> <<set>>
+    - _bilar : IDictionary<string, int>
+    + finnsRegnr() : bool
+    + RäknaKostnad() : float
+    + RäknaInlämningsdatum() : string
+}
+class kund {
+    + Personnr : string <<get>> <<set>>
+    + Fnamn : string <<get>> <<set>>
+    + Enamn : string <<get>> <<set>>
+    + Mobil : string <<get>> <<set>>
+}
+@enduml
